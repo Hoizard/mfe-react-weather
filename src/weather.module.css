@@ -1,0 +1,47 @@
+.widget { font-family: 'DM Sans', sans-serif; display: flex; flex-direction: column; gap: 10px; }
+
+.liveLabel {
+  display: flex; align-items: center; gap: 6px;
+  font-family: 'DM Mono', monospace; font-size: 10px;
+  color: #b0ada6; letter-spacing: 0.08em; text-transform: uppercase;
+}
+
+.dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: #149eca;
+  animation: pulse 2s infinite;
+}
+
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+
+.card {
+  background: #fafaf8; border: 1px solid #f0ede8;
+  border-radius: 7px; padding: 10px 12px; cursor: pointer;
+  transition: border-color 0.2s;
+}
+.card:hover { border-color: rgba(20,158,202,0.35); }
+.card.active { border-color: #149eca; }
+
+.cityName { font-size: 10px; color: #7a7870; font-family: 'DM Mono', monospace; margin-bottom: 2px; }
+.temp { font-family: 'DM Mono', monospace; font-size: 22px; font-weight: 500; color: #149eca; line-height: 1; }
+.cond { font-size: 10px; color: #b0ada6; margin-top: 2px; }
+
+.detail {
+  background: #fafaf8; border: 1px solid rgba(20,158,202,0.2);
+  border-radius: 7px; padding: 12px; display: flex; flex-direction: column; gap: 8px;
+}
+
+.detailCity { font-family: 'DM Mono', monospace; font-size: 11px; color: #149eca; }
+
+.stats { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+
+.statLabel { font-size: 9px; color: #b0ada6; font-family: 'DM Mono', monospace; text-transform: uppercase; letter-spacing: 0.08em; }
+.statVal { font-size: 14px; font-weight: 500; color: #1a1916; }
+
+.condition { font-family: 'DM Mono', monospace; font-size: 10px; color: #b0ada6; }
+.condVal { color: #149eca; }
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
