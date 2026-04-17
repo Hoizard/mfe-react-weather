@@ -1,0 +1,38 @@
+export const CITIES = [
+  {
+    id: 1,
+    name: "Chicago, IL",
+    base: 28,
+    cond: "Partly Cloudy",
+    humidity: 62,
+    wind: 14,
+    feels: 22,
+  },
+  {
+    id: 2,
+    name: "New York, NY",
+    base: 34,
+    cond: "Overcast",
+    humidity: 71,
+    wind: 9,
+    feels: 30,
+  },
+  {
+    id: 3,
+    name: "Austin, TX",
+    base: 58,
+    cond: "Sunny",
+    humidity: 45,
+    wind: 11,
+    feels: 60,
+  },
+  {
+    id: 4,
+    name: "Seattle, WA",
+    base: 46,
+    cond: "Light Rain",
+    humidity: 88,
+    wind: 7,
+    feels: 43,
+  },
+];
