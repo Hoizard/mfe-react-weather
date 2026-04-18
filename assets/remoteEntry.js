@@ -3,13 +3,13 @@ const currentImports = {};
       let moduleMap = {
 "./WeatherWidget":()=>{
       dynamicLoadingCss(["style-BV6vHPPG.css"], false, './WeatherWidget');
-      return __federation_import('https://hoizard.github.io/mfe-react-weather/assets/__federation_expose_WeatherWidget-BPJOq7JO.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
+      return __federation_import('./assets/__federation_expose_WeatherWidget-BPJOq7JO.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
 "./Card":()=>{
       dynamicLoadingCss(["style-BV6vHPPG.css"], false, './Card');
-      return __federation_import('https://hoizard.github.io/mfe-react-weather/assets/__federation_expose_Card-D1JLTBw-.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
+      return __federation_import('./assets/__federation_expose_Card-D1JLTBw-.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
 "./Counter":()=>{
       dynamicLoadingCss(["style-BV6vHPPG.css"], false, './Counter');
-      return __federation_import('https://hoizard.github.io/mfe-react-weather/assets/__federation_expose_Counter-DBCr4eLu.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},};
+      return __federation_import('./assets/__federation_expose_Counter-DBCr4eLu.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},};
       const seen = {};
       const dynamicLoadingCss = (cssFilePaths, dontAppendStylesToHead, exposeItemName) => {
         const metaUrl = import.meta.url;
@@ -19,7 +19,7 @@ const currentImports = {};
         }
 
         const curUrl = metaUrl.substring(0, metaUrl.lastIndexOf('remoteEntry.js'));
-        const base = 'https://hoizard.github.io/mfe-react-weather/';
+        const base = './';
         'assets';
 
         cssFilePaths.forEach(cssPath => {
