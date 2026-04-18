@@ -22,4 +22,5 @@ export default defineConfig({
     minify: false,
     cssCodeSplit: false,
   },
+  base: "https://hoizard.github.io/mfe-react-weather/",
 });
