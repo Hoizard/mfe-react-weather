@@ -2,6 +2,7 @@
   "name": "mfe-react-weather",
   "version": "1.0.0",
   "type": "module",
+  "homepage": "https://hoizard.github.io/mfe-react-weather/",
   "scripts": {
     "dev": "vite --port 4175 --strictPort",
     "build": "vite build",
