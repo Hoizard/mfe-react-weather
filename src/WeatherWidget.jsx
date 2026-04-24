@@ -1,5 +1,4 @@
 import Card from "./Components/Card/Card";
-import Counter from "./Components/Counter/Counter";
 import styles from "./weather.module.css";
 import { CITIES } from "./utils/data";
 import { useState, useEffect } from "react";
@@ -71,7 +70,6 @@ export default function WeatherWidget() {
           condition: <span className={styles.condVal}>{city.cond}</span>
         </div>
       </div>
-      <Counter />
     </div>
   );
 }
