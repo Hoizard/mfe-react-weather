@@ -11,8 +11,6 @@ export default defineConfig({
       filename: "remoteEntry.js",
       exposes: {
         "./WeatherWidget": "./src/WeatherWidget.jsx",
-        "./Card": "./src/Components/Card/Card.tsx",
-        "./Counter": "./src/Components/Counter/Counter.tsx",
       },
       shared: ["react", "react-dom"],
     }),
